@@ -5,3 +5,12 @@ coil_data<- read.csv('Suspension_Coil.csv')
 library(tidyverse)
 total_summary <- summarize(coil_data, Mean=mean(coil_data$PSI), Median=median(coil_data$PSI), Variance=var(coil_data$PSI), SD=sd(coil_data$PSI))
 lot_summary <- coil_data %>% group_by(coil_data$Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups = 'keep')
+
+t.test(coil_data$PSI, mu=1500)
+lot_1 <-subset(coil_data, coil_data$Manufacturing_Lot=="Lot1")
+t.test(lot_1$PSI, mu=1500)
+lot_2 <-subset(coil_data, coil_data$Manufacturing_Lot=="Lot2")
+t.test(lot_2$PSI, mu=1500)
+lot_3 <-subset(coil_data, coil_data$Manufacturing_Lot=="Lot3")
+t.test(lot_3$PSI, mu=1500)
+
