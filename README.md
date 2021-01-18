@@ -12,17 +12,21 @@ The summary statistics for the PSI of suspension coils across all lots in the da
 
 ![](total_summary.png)
 
-As seen above, the current manufacturing data meet the specification that the variance of the suspension coils must not exceed 100 pounds per square inch, as the variance was shown to be 62.29 psi. When broken down by lot however, it can be seen that while Lot 1 and Lot 2 suspension coils meet this criteria, suspension coils from Lot 3 far exceed the acceptable variance (170.29 psi). The summary statistics for PSI broken down by lot is shown below.
+As seen above, the current manufacturing data meet the specification that the variance of the suspension coils must not exceed 100 pounds per square inch, as the variance was shown to be 62.29 psi. When broken down by manufacturing lot however, it can be seen that while Lot 1 and Lot 2 suspension coils meet this criteria, suspension coils from Lot 3 far exceed the acceptable variance (170.29 psi). The summary statistics for PSI broken down by lot is shown below.
 
 ![](lot_summary.png)
 
 ## T-Tests on Suspension Coils
 
-In your README, create a subheading ## T-Tests on Suspension Coils, then briefly summarize your interpretation and findings for the t-test results. Include screenshots of the t-test to support your summary.
+One sided t-tests were performed to determine whether the mean psi is statistically similar to the population mean of 1500 psi. For the entire dataset, the mean psi was 1498.78, and with a p-value of 0.06028, the means are can be said to be statistically similar using the 0.05 confidence interval. When individual t-tests were performed for each manufacturing lot, Lot 1 and 2 were shown to have statistically similar means to the population, while Lot 3 was shown to be statistically different (mean: 1486.14, p-value: 0.04168). The results of all four t-tests are shown below. 
 
-![](ttest.png) ![](ttest_lot1.png)
+![](ttest.png) 
 
-![](ttest_lot2.png) ![](ttest_lot3.png)
+![](ttest_lot1.png)
+
+![](ttest_lot2.png)
+
+![](ttest_lot3.png)
 
 ## Study Design: MechaCar vs Competition
 
