@@ -32,9 +32,8 @@ One sided t-tests were performed to determine whether the mean psi is statistica
 
 ## Study Design: MechaCar vs Competition
 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-In your description, address the following questions:
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+To determine how the MechaCar may fare against its competition, a multiple linear regression should be performed to determine what aspects of similar cars can be used to model the number of those cars sold. Metrics used as independent variables could be the cost, fuel efficiency, horse power, maintenance cost, and safety rating of the competition's vehicles; the dependent variable could number of cars sold in the past year. Assuming that the null hypothesis is rejected and certain variables are shown to have a non-random effect on the number of cars sold, the model can be used to predict how well the MechaCar may sell based on its own metrics.
+
+
+
+
